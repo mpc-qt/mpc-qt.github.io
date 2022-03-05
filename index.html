@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body { font-family: 'Montserrat'; background: #000; margin: 0; }
+nav { font-size: 1.5vw; background: #8a8a8a; color: #fcfcfc; padding: 1vw; text-align: center }
+main { font-size: 1.5vw; background: #3a3a3a; color: #fcfcfc; padding: 1vw; }
+header { margin: 1vw; font-size: 3vw; font-weight: 600; text-align: center; }
+.content { display: block; margin: auto; width: 60vw; }
+.screenie { display: block; margin: 1vw auto; width: 911px; max-width: 80vw; }
+.w911px { width: 911px; }
+.w761px { width: 761px; }
+footer { font-size: 1vw; background: #8a8a8a; color: #fcfcfc; padding: 1vw; text-align: center; }
+h3 { margin: 0; margin-top: 1vw; }
+ul { margin: 0; padding: 0.5vw; }
+li { margin: 1vw; padding: 0; }
+a { color: #8afcfc; text-decoration: none; }
+dl { list-style-type: none; margin: 0; padding: 0; }
+dd { margin-left: 2vw; }
+dt { margin-top: 1vw; }
+dd { margin-bottom: 1vw; }
+nav a { color: #fcfcfc; background-color: #3a8a8a; padding: 0.5vw; text-decoration: none; border-radius: 0.5vw; border: 1px solid #003a3a; }
+
+@media only screen and (max-width: 900px) {
+main, nav { font-size: 3vw; }
+header { font-size: 4vw; }
+.content { width: 80vw; }
+ul { padding: 2vw; }
+dt { margin-top: 2vw; }
+dd { margin-bottom: 2vw; }
+dd { margin-left: 4vw; }
+footer { font-size: 2vw; }
+}
+    </style>
+    <title>Media Player Classic Qute Theater</title>
+  </head>
+  <body>
+    <nav>
+    <a href="index.html">Main</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="support.html">Support</a>
+    &nbsp;
+    <a href="https://github.com/mpc-qt/mpc-qt">Github</a>
+    </nav>
+    <main>
+    <header>Media Player Classic Qute Theater</header>
+    <img align="center" class="screenie w911px" src="images/Screenshot_20220226_155532.png">
+    <div class="content">Media Player Classic Qute Theater ("Mpc-Qt") is a cross-platform multimedia player with a focus on reproducing the interface of Media Player Classic Home Cinema ("Mpc-Hc").
+    <p>&nbsp;
+    <h3>Introduction</h3>
+    <p><a href="https://mpc-hc.org">Mpc-Hc</a> is considered by many to be the quintessential media player for the Windows desktop. Mpc-Qt is a cross-platform application that uses <a href="https://qt.io">Qt</a> to reproduce most of the interface and functionality of Mpc-Hc, and uses <a href="https://mpv.io">libmpv</a>'s powerful media presentation framework to play video instead of DirectShow.  It is not a strict clone; there are some improvements.
+    <p>&nbsp;
+    <h3>Features</h3>
+    <dl>
+    <dt><strong>Clone</strong></dt> <dd>Nearly everything that mpc-hc does for the casual user.</dd>
+    <dt><strong>Multiple playlists</strong></dt> <dd>When you're watching shows on your backlog, load every show into separate playlists and still keep track of the last played file for each playlist. Finally you can eliminate the need to keep track of your progress in a spreadsheet, all while never leaving the comfort of your favorite media player.</dd>
+    <dt><strong>Quick queuing</strong></dt> <dd>Out-of-order playback in the same style of xmms/qmmp. Got some compilation albums in a playlist, but want to hear only some rock tracks for a while? Now you can, without obliterating your playlist.</dd></dt>
+    <dt><strong>Playlist searching</strong></dt> <dd>Multi-threaded playlist searching, in the same style as other media players. Find the tracks you want, when you want them.</dd>
+    <dt><strong>Screenshot templates</strong></dt> <dd>Take screenshots with a custom, sleek and stylized filename. Only include the information that you want.</dd>
+    <dt><strong>Looped playback</strong></dt> <dd>Selectively show part of video/music tracks.</dd>
+    <dt><strong>Playlist formatting</strong></dt> <dd>Display custom metadata in the playlist window.  Show the artist as well as the title, or even the encoder used if present.</dd>
+    <dt><strong>Race Inspired Cosmetic Enhancements</strong></dt> <dd>In-app custom styling support. Make the app go faster!</dd>
+    </dl>
+    <p>&nbsp;
+    <h3>Do More</h3>
+    <p>Download a <a href="https://github.com/mpc-qt/mpc-qt/releases">release</a>.
+    <p>File a <a href="https://github.com/mpc-qt/mpc-qt/issues">bug report</a>.
+    <p>See the <a href="https://github.com/mpc-qt/mpc-qt">source</a>.
+    <p>&nbsp;
+    </div></main>
+    <footer>Media Player Classic Qute Theater is copyrighted <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2</a> by the Mpc-Qt developers.</footer>
+  </body>
+</html>
