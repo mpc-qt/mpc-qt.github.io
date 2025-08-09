@@ -25,6 +25,8 @@ dd { margin-left: 2vw; }
 dt { margin-top: 1vw; }
 dd { margin-bottom: 1vw; }
 nav a { color: #fcfcfc; background-color: #3a8a8a; padding: 0.5vw; text-decoration: none; border-radius: 0.5vw; border: 1px solid #003a3a; }
+a.link-anchor { position: absolute; transform: translateX(10%); opacity: 0; transition: opacity 0.2s; vertical-align: middle; }
+h3:hover a.link-anchor, h3:focus-within a.link-anchor { opacity: 1;}
 
 @media only screen and (max-width: 900px) {
 main, nav { font-size: 3vw; }
@@ -52,7 +54,9 @@ footer { font-size: 2vw; }
     <header>Downloads</header>
     <div class="content">
         <div id="packages">
-            <h3>Packages</h3>
+            <h3>Packages<a href="#packages" title="Link to Packages section" class="link-anchor">
+                <span>🔗</span></a>
+            </h3>
             <p>Packages for installation on your system may be available.
             <dl>
             <dt><strong>Windows installer and portable</strong></dt>
@@ -74,7 +78,9 @@ footer { font-size: 2vw; }
     <p>If you make a package please contact the developers so they can add your distribution to this list.
     <p>&nbsp;
         <div id="dev-builds">
-            <h3>Development versions</h3>
+            <h3>Development versions<a href="#dev-builds" title="Link to Development versions section" class="link-anchor">
+                <span>🔗</span></a>
+            </h3>
             <p>These are meant to test the latest unreleased version of the software.
             <dl>
             <dt><strong>Windows installer</strong></dt>
@@ -93,7 +99,9 @@ footer { font-size: 2vw; }
         </div>
     <p>&nbsp;
         <div id="source">
-            <h3>Source code</h3>
+            <h3>Source code<a href="#source" title="Link to Source code section" class="link-anchor">
+                <span>🔗</span></a>
+            </h3>
             <p>The best version is git master, and everyone is encouraged to increase their computer-fu by compiling from source. Compiling from source gives you several advantages over the usual user, such as the ability to use latest and pre-release software regardless of where it comes from. Compiling instructions are in the git repository's README.
             <dl>
             <dt><strong>Source code (latest release)</strong></dt>
