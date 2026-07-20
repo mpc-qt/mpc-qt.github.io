@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +65,7 @@ footer { font-size: 2vw; }
             </dl>
             <p>Distribution-specific packages:</p>
             <a href="https://repology.org/project/mpc-qt/versions">
-                <img src="https://repology.org/badge/vertical-allrepos/mpc-qt.svg?columns=3" alt="Packaging status">
+                <img id="repology-badge" src="https://repology.org/badge/vertical-allrepos/mpc-qt.svg?columns=3" alt="Packaging status">
             </a>
         </div>
     <p>&nbsp;</p>
@@ -106,5 +106,20 @@ footer { font-size: 2vw; }
     <p>&nbsp;</p>
     </div></main>
     <footer>Media Player Classic Qute Theater is copyrighted <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GPL v2</a> by the MPC-QT developers.</footer>
+    <script type="text/javascript">
+      const isMobile = () => {
+        if (navigator.userAgentData) {
+          return navigator.userAgentData.mobile;
+        }
+        return /Mobi|Android/i.test(navigator.userAgent);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const badge = document.getElementById('repology-badge');
+        if (badge && isMobile()) {
+          badge.src = badge.src.replace(/columns=\d+/, 'columns=1');
+        }
+      });
+    </script>
   </body>
 </html>
